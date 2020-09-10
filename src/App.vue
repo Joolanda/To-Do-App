@@ -32,7 +32,7 @@ export default {
   name: 'RegularToolbar',
   data() {
     return {
-      title: "My Weekly Tasks",
+      title: "TO DO list",
       todos: [],
       currentTodo: '',
       editTodoId: null
@@ -91,6 +91,15 @@ export default {
   width: 80%;
   height: 80px;
 }
+
+element.style {
+  width: 100%;
+}
+
+.material-icons {
+  cursor: pointer;
+
+}
 .todos {
   width: 80%;
   margin: 0 auto;
@@ -104,18 +113,18 @@ export default {
 .list-item{
 width: 100%;
 }
+
 .md-field {
-  border: 2px solid blue !important;
-  height: 70px !important;
-  border-radius: 3px !important;
-  width: 60% !important;
-  font-size: 40px !important;
-  min-height: 0px !important;
-  padding-top: 5px !important;
-  padding-left: 5px !important;
+  border: 2px solid blue ;
+  height: 70px ;
+  border-radius: 3px;
+  font-size: 24px;
+  min-height: 0px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 .md-button{
-  border: 1.5px solid white !important;
+  border: 1.5px solid white;
 }
 .completed{
   text-decoration: line-through;
