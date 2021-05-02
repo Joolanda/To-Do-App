@@ -118,6 +118,7 @@ element.style {
   background: #212121;
 }
 .list-item {
+  border-top: 0.5px solid #896b4c;
   width: 100%;
 }
 
