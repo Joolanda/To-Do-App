@@ -6,6 +6,7 @@
 
     <md-field class="addTodo">
       <md-textarea
+        class="todos_textarea"
         v-model="currentTodo"
         @keydown.enter="addTodo()"
         placeholder="Add a new task"
@@ -44,7 +45,7 @@ export default {
   name: "RegularToolbar",
   data() {
     return {
-      title: "TO DO list",
+      title: "TO DO",
       todos: [],
       currentTodo: "",
       editTodoId: null,
@@ -93,36 +94,56 @@ export default {
 </script>
 
 <style>
+.app-container {
+  margin: 5%;
+}
 .addTodo {
+  text-align: left;
   margin: 0 auto;
   margin-bottom: 20px;
   width: 80%;
   height: 80%;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.todos_textarea {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 
-element.style {
-  width: 100%;
+.element.style {
+  width: 80%;
 }
 
 .material-icons {
   cursor: pointer;
 }
+
 .todos {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 0px;
-  padding-bottom: 0px;
-  border: 0.5px solid #0af;
+  padding-bottom: 5px;
+  border: 0.5px solid #896b4c;
 }
 .todo-title {
+  padding: 20px;
+  text-decoration: #896b4c;
+
   background: #212121;
 }
+h1 {
+  color: #896b4c;
+}
 .list-item {
-  border-top: 0.5px solid #896b4c;
+  border-bottom: 0.5px solid #896b4c;
+  margin-bottom: 15px;
   width: 100%;
 }
 
 .md-field {
+  width: 80%;
   border: 2px solid #896b4c;
   height: 70px;
   border-radius: 3px;
@@ -131,6 +152,7 @@ element.style {
   padding-top: 5px;
   padding-left: 5px;
 }
+
 .md-button {
   border: 1.5px solid #896b4c;
 }
